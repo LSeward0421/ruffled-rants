@@ -30,7 +30,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
   return (
     <form classname="insult-form" onSubmit={handleSubmit}>
       <label>
-        <input type="text" placeholder='Insult here..' 
+        <input type="text" placeholder='Insult here...' 
         value={text} 
         onChange={handleInputChange} 
         />
