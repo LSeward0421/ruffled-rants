@@ -1,14 +1,24 @@
 import InsultForm from "../InsultForm/InsultForm";
 import { useState } from 'react';
-import './HomePage.css'
+import './HomePage.css';
 
 const HomePage = () => {
+  const [translatedText, setTranslatedText] = useState('');
+
+  const handleTranslation = (translated) => {
+    setTranslatedText(translated);
+  };
+
+  const handleClear = () => {
+    setTranslatedText('');
+  };
+
   return (
     <div className="home-page">
-      <InsultForm />
-      <p className= 'translated-text'>Translated:</p>
+      <InsultForm onSubmit={handleTranslation} handleClear={handleClear} />
+      <p className="translated-text">Translated: {translatedText}</p>
     </div>
-  )
-}
+  );
+};
 
 export default HomePage;

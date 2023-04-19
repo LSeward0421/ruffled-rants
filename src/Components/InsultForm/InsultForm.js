@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { translateText } from '../../apiCalls';
-import './InsultForm.css'
+import './InsultForm.css';
 
-const InsultForm = ({ setInsultHistory }) => {
+const InsultForm = ({ onSubmit, handleClear }) => {
   const [text, setText] = useState('');
 
   const handleInputChange = (event) => {
@@ -15,11 +15,16 @@ const InsultForm = ({ setInsultHistory }) => {
       try {
         const data = await translateText(text);
         const translated = data.contents.translated;
-        setText('');
+        onSubmit(translated);
       } catch (error) {
         console.error(error);
       }
     }
+  };
+
+  const handleClearClick = () => {
+    setText('');
+    handleClear();
   };
 
   return (
@@ -30,7 +35,8 @@ const InsultForm = ({ setInsultHistory }) => {
         onChange={handleInputChange} 
         />
       </label>
-      <button type="submit">Translate</button>
+      <button type="submit-btn">Translate</button>
+      <button type="button" onClick={handleClearClick}>Clear</button>
     </form>
   );
 }
