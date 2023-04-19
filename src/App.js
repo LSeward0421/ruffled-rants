@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Route } from 'react-router-dom'
 import { translateText } from './apiCalls';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         const data = await translateText(text);
         const translated = data.contents.translated;
         setTranslatedText(translated);
-        console.log(translated);
+        console.log(data);
       } catch (error) {
         console.error(error);
       }
