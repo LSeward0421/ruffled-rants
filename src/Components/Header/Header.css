@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px; 
+  height: 100px; 
   width: 100%;
   position: relative;
 }
@@ -18,9 +18,9 @@
 }
 
 .logo {
-  margin-top: 25px;
+  margin-top: 60px;
   width: 100%;
-  height: auto;
+  height: 700px;
 }
 
 .nav-link {
@@ -32,9 +32,9 @@
 
 .history-icon {
   border-radius: 20px;
-  margin-top: 15px;
-  width: 100px;
-  transition: box-shadow 0.3s ease;
+  margin-top: 45px;
+  width: 160px;
+  transition: box-shadow 0.4s ease;
 }
 
 .history-icon:hover {
@@ -52,6 +52,7 @@
   padding: 6px 10px;
   border-radius: 4px;
   font-size: 16px;
+  font-family: Cinzel;
   white-space: nowrap;
 }
 
