@@ -1,7 +1,13 @@
+html, body {
+  /* overflow: hidden; */
+  height: 100vh;
+  margin: 0;
+}
+
 body {
   background-image: url('BackgroundImage.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
 }

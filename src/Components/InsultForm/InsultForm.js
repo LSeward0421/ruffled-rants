@@ -15,7 +15,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
       try {
         const data = await translateText(text);
         const translated = data.contents.translated;
-        onSubmit(translated);
+        onSubmit(text, translated);
       } catch (error) {
         console.error(error);
       }
