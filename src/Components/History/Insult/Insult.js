@@ -1,4 +1,5 @@
 import "./Insult.css";
+import PropTypes from 'prop-types';
 
 const Insult = ({ originalText, translatedText, dateCreated }) => {
   return (
@@ -10,6 +11,12 @@ const Insult = ({ originalText, translatedText, dateCreated }) => {
       <p className="translated-text">"{translatedText}"</p>
     </div>
   );
+};
+
+Insult.propTypes = {
+  originalText: PropTypes.string.isRequired,
+  translatedText: PropTypes.string.isRequired,
+  dateCreated: PropTypes.string.isRequired,
 };
 
 export default Insult;

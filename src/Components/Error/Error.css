@@ -1,0 +1,31 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: #c0392b;
+}
+
+.error p {
+  border: 3px solid #c0392b;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: rgba(227, 233, 237, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

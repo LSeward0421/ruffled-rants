@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { translateText } from "../../apiCalls";
 import "./InsultForm.css";
+import PropTypes from 'prop-types';
 
 const InsultForm = ({ onSubmit, handleClear }) => {
   const [text, setText] = useState("");
@@ -57,6 +58,11 @@ const InsultForm = ({ onSubmit, handleClear }) => {
       </div>
     </div>
   );
+};
+
+InsultForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  handleClear: PropTypes.func.isRequired,
 };
 
 export default InsultForm;

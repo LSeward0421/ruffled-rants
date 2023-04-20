@@ -9,6 +9,7 @@ import InsultHistoryContext from "../../InsultHistoryContext";
 
 function App() {
   const [insultHistory, setInsultHistory] = useState([]);
+  const [error, setError] = useState(null);
 
   const addInsult = (originalText, translatedText) => {
     const dateCreated = new Date().toLocaleString();
