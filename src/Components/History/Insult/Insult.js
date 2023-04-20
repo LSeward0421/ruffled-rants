@@ -1,13 +1,13 @@
-import './Insult.css'
+import "./Insult.css";
 
-const Insult = () => {
+const Insult = ({ originalText, translatedText, dateCreated }) => {
   return (
-    <div className='insult'>
-      <p className='insult-details'>
-        Text & Translated Text
-      </p>
+    <div className="insult">
+      <p className="original-text">{originalText}</p>
+      <p className="translated-text">{translatedText}</p>
+      <p className="date-created">{dateCreated}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Insult; 
+export default Insult;

@@ -7,9 +7,9 @@ const HomePage = () => {
   const [translatedText, setTranslatedText] = useState('...Thy text translation.');
   const { addInsult } = useContext(InsultHistoryContext);
 
-  const handleTranslation = (translated) => {
+  const handleTranslation = (original, translated) => {
     setTranslatedText(translated);
-    addInsult(originalText, translated)
+    addInsult(original, translated)
   };
 
   const handleClear = () => {

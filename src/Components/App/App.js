@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import HomePage from "../HomePage/HomePage";
@@ -19,16 +19,16 @@ function App() {
   };
 
   return (
-    <InsultHistoryContext.Provider value={{ insultHistory, addInsult }}>
-      <div className="App">
+    <div className="App">
+      <InsultHistoryContext.Provider value={{ insultHistory, addInsult }}>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/history" component={History} />
           <Route component={Error} />
         </Switch>
-      </div>
-    </InsultHistoryContext.Provider>
+      </InsultHistoryContext.Provider>
+    </div>
   );
 }
 
