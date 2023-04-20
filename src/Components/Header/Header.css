@@ -18,6 +18,7 @@
 }
 
 .logo {
+  margin-top: 25px;
   width: 100%;
   height: auto;
 }
@@ -30,11 +31,33 @@
 }
 
 .history-icon {
+  border-radius: 20px;
+  margin-top: 15px;
   width: 100px;
+  transition: box-shadow 0.3s ease;
 }
 
+.history-icon:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
 
+.tooltip {
+  display: none;
+  position: absolute;
+  right: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  white-space: nowrap;
+}
 
+.nav-link:hover .tooltip {
+  display: block;
+}
 
 
 

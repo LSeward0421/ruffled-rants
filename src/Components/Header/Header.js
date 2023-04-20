@@ -13,8 +13,12 @@ const Header = () => {
       </div>
       <div className="nav-link">
         <Link to='/history'>
-          <img src={historyIcon} alt="History Icon" className="history-icon" />
+          <div className="tooltip-card">
+            <img src={historyIcon} alt="History Icon" className="history-icon" />
+            <div className="tooltip">Go to History Page</div>
+          </div>
         </Link>
+        {/* <span className="tooltip">Go to History Page</span> */}
       </div>
     </div>
   )
