@@ -27,7 +27,7 @@
 
 .input-container {
   position: absolute;
-  left: 79%;
+  left: 77%;
   top: 38%;
   right: 5%;
   transform: translate(-50%, -50%);
@@ -57,11 +57,29 @@ textarea {
 .buttons-container {
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
-  margin-top: 23px;
+  margin-top: 18px;
+}
+
+.button {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #446597a1;
+  color: #fff;
 }
 
 .submit-btn {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
+
 

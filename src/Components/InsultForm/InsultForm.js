@@ -41,10 +41,10 @@ const InsultForm = ({ onSubmit, handleClear }) => {
               />
             </label>
             <div className="buttons-container">
-              <button className="submit-btn" type="submit">
+              <button className="button submit-btn" type="submit">
                 Translate
               </button>
-              <button type="button" onClick={handleClearClick}>
+              <button className="button clear-btn" type="button" onClick={handleClearClick}>
                 Clear
               </button>
             </div>
