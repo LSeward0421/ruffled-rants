@@ -4,3 +4,13 @@
   align-items: center;
   flex-direction: column;
 }
+
+
+.translated-text {
+  position: absolute;
+  left: 60%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+}

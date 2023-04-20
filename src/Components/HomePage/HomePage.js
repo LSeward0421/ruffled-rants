@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './HomePage.css';
 
 const HomePage = () => {
-  const [translatedText, setTranslatedText] = useState('');
+  const [translatedText, setTranslatedText] = useState('...Thy text translation');
 
   const handleTranslation = (translated) => {
     setTranslatedText(translated);
@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <InsultForm onSubmit={handleTranslation} handleClear={handleClear} />
-      <p className="translated-text">Translated: {translatedText}</p>
+      <p className="translated-text"> {translatedText}</p>
     </div>
   );
 };

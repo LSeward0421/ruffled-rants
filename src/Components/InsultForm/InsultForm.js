@@ -33,11 +33,12 @@ const InsultForm = ({ onSubmit, handleClear }) => {
         <div className="input-container">
           <form className="insult-form" onSubmit={handleSubmit}>
             <label>
-              <input type="text" 
-              placeholder='Insult here...' 
-              value={text} 
-              onChange={handleInputChange} 
-              />
+            <textarea
+              placeholder="Insult here..."
+              value={text}
+              onChange={handleInputChange}
+              rows="4"
+            />
             </label>
             <button className="submit-btn" type="submit">Translate</button>
             <button type="button" onClick={handleClearClick}>Clear</button>
