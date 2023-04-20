@@ -30,6 +30,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
   return (
     <div className="form-container">
       <div className="left-cat">
+        <div className="chat-bubble-left"></div>
         <div className="input-container">
           <form className="insult-form" onSubmit={handleSubmit}>
             <label>
@@ -52,9 +53,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
         </div>
       </div>
       <div className="right-cat">
-        <div className="translated-text-container">
-          <p className="translated-text"></p>
-        </div>
+        <div className="chat-bubble-right"></div>
       </div>
     </div>
   );

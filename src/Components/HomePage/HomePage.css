@@ -3,14 +3,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
+.translated-text-container {
+  position: absolute;
+  left: 55%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 385px;
+  height: 125px;
+  overflow: auto;
+}
 
 .translated-text {
-  position: absolute;
-  left: 60%;
-  top: 65%;
-  transform: translate(-50%, -50%);
   font-family: 'Cinzel', serif;
   font-size: 24px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
