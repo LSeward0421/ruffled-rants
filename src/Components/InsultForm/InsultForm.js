@@ -28,16 +28,28 @@ const InsultForm = ({ onSubmit, handleClear }) => {
   };
 
   return (
-    <form classname="insult-form" onSubmit={handleSubmit}>
-      <label>
-        <input type="text" placeholder='Insult here...' 
-        value={text} 
-        onChange={handleInputChange} 
-        />
-      </label>
-      <button type="submit-btn">Translate</button>
-      <button type="button" onClick={handleClearClick}>Clear</button>
-    </form>
+    <div className="form-container">
+      <div className="left-cat">
+        <div className="input-container">
+          <form className="insult-form" onSubmit={handleSubmit}>
+            <label>
+              <input type="text" 
+              placeholder='Insult here...' 
+              value={text} 
+              onChange={handleInputChange} 
+              />
+            </label>
+            <button className="submit-btn" type="submit">Translate</button>
+            <button type="button" onClick={handleClearClick}>Clear</button>
+          </form>
+        </div>
+      </div>
+      <div className="right-cat">
+        <div className="translated-text-container">
+          <p className="translated-text"></p>
+        </div>
+      </div>
+    </div>
   );
 }
 

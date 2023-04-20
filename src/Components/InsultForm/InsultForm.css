@@ -1,0 +1,46 @@
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%)
+}
+
+.left-cat {
+  background-image: url('LeftCat.svg');
+  background-size: cover;
+  width: 700px;
+  height: 600px;
+  position: relative;
+}
+
+.right-cat {
+  background-image: url('RightCat.svg');
+  background-size: cover;
+  width: 700px;
+  height: 600px;
+  position: relative;
+}
+
+.input-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.translated-text-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 8px;
+}
+
