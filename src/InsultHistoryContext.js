@@ -1,8 +1,5 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-const insultHistoryContext = createContext({
-  insultHistory: [], 
-  addinsult: () => {}
-})
+const InsultHistoryContext = createContext({ insultHistory: [], addInsult: () => {} });
 
-export default insultHistoryContext;
+export default InsultHistoryContext;

@@ -1,12 +1,15 @@
 import InsultForm from "../InsultForm/InsultForm";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import './HomePage.css';
+import InsultHistoryContext from "../../InsultHistoryContext";
 
 const HomePage = () => {
   const [translatedText, setTranslatedText] = useState('...Thy text translation.');
+  const { addInsult } = useContext(InsultHistoryContext);
 
   const handleTranslation = (translated) => {
     setTranslatedText(translated);
+    addInsult(originalText, translated)
   };
 
   const handleClear = () => {
