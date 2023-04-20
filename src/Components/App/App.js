@@ -8,7 +8,6 @@ import Error from '../Error/Error';
 
 
 function App() {
-
   return (
     <div className="App">
       <Header />
