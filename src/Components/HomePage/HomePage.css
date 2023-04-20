@@ -8,12 +8,13 @@
 
 .translated-text-container {
   position: absolute;
-  left: 57%;
-  top: 85%;
+  left: 55%;
+  top: 75%;
   transform: translate(-50%, -50%);
-  width: 385px;
-  height: 125px;
+  width: 24vw;
+  height: 14vh;
   overflow: auto;
+  /* border: 2px solid red; */
 }
 
 .translated-text {
