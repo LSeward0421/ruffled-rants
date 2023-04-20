@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { translateText } from '../../apiCalls';
-import './InsultForm.css';
+import { useState } from "react";
+import { translateText } from "../../apiCalls";
+import "./InsultForm.css";
 
 const InsultForm = ({ onSubmit, handleClear }) => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   const handleInputChange = (event) => {
     setText(event.target.value);
@@ -23,7 +23,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
   };
 
   const handleClearClick = () => {
-    setText('');
+    setText("");
     handleClear();
   };
 
@@ -33,15 +33,21 @@ const InsultForm = ({ onSubmit, handleClear }) => {
         <div className="input-container">
           <form className="insult-form" onSubmit={handleSubmit}>
             <label>
-            <textarea
-              placeholder="Insult here..."
-              value={text}
-              onChange={handleInputChange}
-              rows="4"
-            />
+              <textarea
+                placeholder="Insult here..."
+                value={text}
+                onChange={handleInputChange}
+                rows="4"
+              />
             </label>
-            <button className="submit-btn" type="submit">Translate</button>
-            <button type="button" onClick={handleClearClick}>Clear</button>
+            <div className="buttons-container">
+              <button className="submit-btn" type="submit">
+                Translate
+              </button>
+              <button type="button" onClick={handleClearClick}>
+                Clear
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -52,6 +58,6 @@ const InsultForm = ({ onSubmit, handleClear }) => {
       </div>
     </div>
   );
-}
+};
 
 export default InsultForm;

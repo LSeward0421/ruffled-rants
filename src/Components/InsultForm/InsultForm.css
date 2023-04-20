@@ -27,16 +27,18 @@
 
 .input-container {
   position: absolute;
-  left: 63%;
-  top: 41%;
+  left: 79%;
+  top: 38%;
   right: 5%;
   transform: translate(-50%, -50%);
+  width:60%
 }
 
 textarea {
   font-family: 'Cinzel', serif;
   font-size: 24px;
   width: 100%;
+  max-width: 100%;
   border: none;
   outline: none;
   background-color: transparent;
@@ -47,8 +49,19 @@ textarea {
 }
 
 
+.insult-form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  margin-top: 23px;
+}
+
 .submit-btn {
-  display: block;
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
