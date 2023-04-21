@@ -19,8 +19,6 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <InsultForm onSubmit={handleTranslation} handleClear={handleClear} translatedText={translatedText} />
-      <div className="translated-text-container">
-      </div>
     </div>
   );
 };

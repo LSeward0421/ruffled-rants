@@ -56,7 +56,6 @@ const InsultForm = ({ onSubmit, handleClear, translatedText }) => {
       </div>
       <div className="right-cat">
         <div className="chat-bubble-right"></div>
-        <p className="translated-text"> {translatedText}</p>
       </div>
     </div>
   );

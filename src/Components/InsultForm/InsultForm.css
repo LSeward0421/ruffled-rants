@@ -58,7 +58,7 @@
 
 textarea {
   font-family: 'Cinzel', serif;
-  font-size: 1.5vw;
+  font-size: 2vw;
   width: 100%;
   max-width: 100%;
   border: none;
@@ -149,7 +149,7 @@ textarea {
   .translated-text {
     top: 55%;
     left:5%;
-    font-size: 14px;
+    font-size: 314px;
   }
 
   .input-container {
@@ -157,5 +157,6 @@ textarea {
     width: 33vw;
     left: 73%;
     top: 59%;
+    /* border: 2px solid red; */
   }
 }
