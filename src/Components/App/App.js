@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <InsultHistoryContext.Provider value={{ insultHistory, addInsult }}>
+      <InsultHistoryContext.Provider value={{ insultHistory, addInsult, setError }}>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />

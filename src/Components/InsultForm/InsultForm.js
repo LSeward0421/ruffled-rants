@@ -2,6 +2,7 @@ import { useState } from "react";
 import { translateText } from "../../apiCalls";
 import "./InsultForm.css";
 import PropTypes from 'prop-types';
+import InsultHistoryContext from "../../InsultHistoryContext";
 
 const InsultForm = ({ onSubmit, handleClear }) => {
   const [text, setText] = useState("");
