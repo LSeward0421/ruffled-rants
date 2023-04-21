@@ -4,7 +4,7 @@ import "./InsultForm.css";
 import PropTypes from 'prop-types';
 import InsultHistoryContext from "../../InsultHistoryContext";
 
-const InsultForm = ({ onSubmit, handleClear }) => {
+const InsultForm = ({ onSubmit, handleClear, translatedText }) => {
   const [text, setText] = useState("");
 
   const handleInputChange = (event) => {
@@ -56,6 +56,7 @@ const InsultForm = ({ onSubmit, handleClear }) => {
       </div>
       <div className="right-cat">
         <div className="chat-bubble-right"></div>
+        <p className="translated-text"> {translatedText}</p>
       </div>
     </div>
   );

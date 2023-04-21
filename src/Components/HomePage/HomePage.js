@@ -18,9 +18,8 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <InsultForm onSubmit={handleTranslation} handleClear={handleClear} />
+      <InsultForm onSubmit={handleTranslation} handleClear={handleClear} translatedText={translatedText} />
       <div className="translated-text-container">
-        <p className="translated-text"> {translatedText}</p>
       </div>
     </div>
   );

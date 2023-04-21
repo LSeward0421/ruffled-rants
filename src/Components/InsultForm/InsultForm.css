@@ -3,13 +3,8 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  gap: 2vw;
-  width: 100%;
-  position: absolute;
-  left: 55%;
-  top: 19%;
-  transform: translateX(-50%);
+  gap: 10vw;
+  overflow: hidden;
 }
 
 .left-cat {
@@ -63,7 +58,7 @@
 
 textarea {
   font-family: 'Cinzel', serif;
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 100%;
   max-width: 100%;
   border: none;
@@ -114,4 +109,53 @@ textarea {
   margin-bottom: 7px;
 }
 
+.translated-text {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  position: absolute;
+  top: 58%;
+  left: -30%;
 
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .left-cat, .right-cat {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .chat-bubble-left, .chat-bubble-right {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .chat-bubble-left {
+    top: 40%;
+    left: 40%;
+  }
+
+  .chat-bubble-right {
+    top: 45%;
+    right: 40%;
+  }
+
+  .translated-text {
+    top: 55%;
+    left:5%;
+    font-size: 14px;
+  }
+
+  .input-container {
+    height: 6vh;
+    width: 33vw;
+    left: 73%;
+    top: 59%;
+  }
+}

@@ -8,8 +8,8 @@
 
 .translated-text-container {
   position: absolute;
-  left: 55%;
-  top: 75%;
+  left: 59%;
+  top: 70%;
   transform: translate(-50%, -50%);
   width: 24vw;
   height: 14vh;
@@ -17,9 +17,3 @@
   /* border: 2px solid red; */
 }
 
-.translated-text {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
