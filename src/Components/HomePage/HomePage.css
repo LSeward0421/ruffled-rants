@@ -24,3 +24,17 @@
   position: absolute;
   top: 2%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .translated-text-container {
+    left: 32%;
+    top: 175%;
+    width: 33vw;
+    height: 12vh;
+    border: 2px solid red;
+  }
+
+  .home-page .translated-text-container .translated-text {
+    font-size: 30px;
+  }
+}
