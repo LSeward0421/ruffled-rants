@@ -31,11 +31,14 @@ describe("Home Page", () => {
     cy.get('.nav-link .history-icon').should('be.visible');
   });
 
-  it('should display the tooltip on hover', () => {
-    cy.get('.nav-link').trigger('mouseover');
-    cy.get('.tooltip').should('be.visible');
+  it('should display the left cat image', () => {
+    cy.get('.left-cat').should('be.visible');
   });
 
+  it('should display the right cat image', () => {
+    cy.get('.right-cat').should('be.visible');
+  });
+  
   it('should translate text when submitted', () => {
     cy.get('textarea').type('You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die.');
     cy.get('.submit-btn').click();
