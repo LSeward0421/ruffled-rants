@@ -50,6 +50,19 @@ describe("Home Page", () => {
     cy.url().should('include', '/history');
   });
 
+  it('should navigate to history page and display translation history', () => {
+    cy.get('textarea').type('You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die.');
+    cy.get('.submit-btn').click();
+    cy.get('.nav-link .history-icon').click();
+    cy.url().should('include', '/history');
+  
+    cy.get('.insult').should('have.length', 1);
+    cy.get('.original-text').should('have.text', '"You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die."'); 
+    cy.get('.translated-text').should('have.text', '"Thee did giveth mr. Tim a hearty meal,  but unfortunately what he did doth englut did maketh him kicketh the bucket."'); 
+    cy.get('.date-created').should('be.visible'); 
+  });
+  
+
   it('should display an error message if API is not available', () => {
     cy.intercept(
       {
@@ -81,5 +94,4 @@ describe("Home Page", () => {
     cy.get('.submit-btn').click();
     cy.get('.error').should('contain.text', 'Oh no! Something went wrong! Please try again. 500');
   });
-  
 });
