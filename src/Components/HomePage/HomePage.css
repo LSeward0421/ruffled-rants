@@ -14,16 +14,13 @@
   width: 24vw;
   height: 14vh;
   overflow: auto;
-  /* border: 2px solid red; */
 }
 
-.translated-text {
+.home-page .translated-text-container .translated-text {
   font-family: 'Cinzel', serif;
   font-size: 24px;
   white-space: pre-wrap;
   word-wrap: break-word;
   position: absolute;
   top: 2%;
-  /* border: 2px solid red; */
-
 }

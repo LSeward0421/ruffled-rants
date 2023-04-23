@@ -72,7 +72,6 @@ textarea {
   white-space: pre-wrap;
   word-wrap: break-word;
   pointer-events: cursor;
-  border: 2px solid red;
 }
 
 .insult-form {
@@ -83,13 +82,11 @@ textarea {
 .buttons-container {
   display: flex;
   flex-direction: column;
-  margin-top: 18px;
-  margin-left: 5px;
+  padding: 1%;
   position: absolute;
   left: 80%;
-  top: 28%;
+  top: 24%;
   transform: translateY(-50%);
-
 }
 
 .button {
@@ -113,13 +110,6 @@ textarea {
 
 .submit-btn {
   margin-bottom: 7px;
-}
-
-.translated-text {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 1000px) {
