@@ -1,9 +1,9 @@
 import './Error.css';
 
-const Error = ({ errorMessage }) => {
+const Error = ({ message }) => {
   return (
     <div className='error'>
-      <p>Oh no! Something went wrong: {errorMessage}</p>
+      <p>Oh no! Something went wrong! Please try again. {message}</p>
     </div>
   )
 }

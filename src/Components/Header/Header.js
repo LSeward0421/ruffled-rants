@@ -18,7 +18,6 @@ const Header = () => {
             <div className="tooltip">Go to History Page</div>
           </div>
         </Link>
-        {/* <span className="tooltip">Go to History Page</span> */}
       </div>
     </div>
   )

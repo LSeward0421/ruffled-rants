@@ -3,23 +3,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
 }
 
 .translated-text-container {
   position: absolute;
-  left: 55%;
-  top: 75%;
+  left: 54%;
+  top: 69%;
   transform: translate(-50%, -50%);
   width: 24vw;
   height: 14vh;
   overflow: auto;
-  /* border: 2px solid red; */
 }
 
-.translated-text {
+.home-page .translated-text-container .translated-text {
   font-family: 'Cinzel', serif;
   font-size: 24px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  position: absolute;
+  top: 2%;
 }

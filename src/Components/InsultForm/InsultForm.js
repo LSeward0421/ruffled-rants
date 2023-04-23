@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { translateText } from "../../apiCalls";
 import "./InsultForm.css";
 import PropTypes from 'prop-types';
+import InsultHistoryContext from "../../InsultHistoryContext";
 
-const InsultForm = ({ onSubmit, handleClear }) => {
+const InsultForm = ({ onSubmit, handleClear, translatedText }) => {
   const [text, setText] = useState("");
+  const { setError } = useContext(InsultHistoryContext);
 
   const handleInputChange = (event) => {
     setText(event.target.value);
@@ -17,8 +19,9 @@ const InsultForm = ({ onSubmit, handleClear }) => {
         const data = await translateText(text);
         const translated = data.contents.translated;
         onSubmit(text, translated);
+        setError(null);
       } catch (error) {
-        console.error(error);
+        setError(`${error.message}`);
       }
     }
   };
