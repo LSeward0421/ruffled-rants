@@ -142,6 +142,12 @@ textarea {
     height: 7vh;
     width: 30vw;
     left: 73%;
+    top: 55%;
+  }
+
+  .buttons-container {
+    left: 80%;
+    top: 90%;
   }
 }
 

@@ -28,13 +28,12 @@
 @media only screen and (max-width: 1000px) {
   .translated-text-container {
     left: 32%;
-    top: 175%;
+    top: 210%;
     width: 33vw;
-    height: 12vh;
-    border: 2px solid red;
+    height: 13vh;
   }
 
   .home-page .translated-text-container .translated-text {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
