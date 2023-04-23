@@ -22,10 +22,7 @@ const History = () => {
   return (
     <div className="history-page">
       <h1>Thine Insult History</h1>
-      {/* div around both and display flex, 100%, cat 20%, results 75% */}
-      {/* cat image here */}
-      <div className="history-results"> {historyResults}
-      </div>
+      <div className="history-results">{historyResults}</div>
     </div>
   );
 };
