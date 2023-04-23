@@ -2,6 +2,7 @@ import "./History.css";
 import Insult from "./Insult/Insult";
 import { useContext, useEffect } from "react";
 import InsultHistoryContext from "../../InsultHistoryContext";
+import HistoryCat from './historyCat.svg'
 
 const History = () => {
   const { insultHistory } = useContext(InsultHistoryContext);
@@ -22,7 +23,12 @@ const History = () => {
   return (
     <div className="history-page">
       <h1>Thine Insult History</h1>
-      <div className="history-results">{historyResults}</div>
+      <div className="content-wrapper">
+        <div className="svg-container">
+          <img className="history-cat" src={HistoryCat} alt='History Cat' />
+        </div>
+        <div className="history-results">{historyResults}</div>
+      </div>
     </div>
   );
 };
