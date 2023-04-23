@@ -50,17 +50,20 @@
 .input-container {
   position: absolute;
   left: 100%;
-  top: 38%;
+  top: 52%;
   right: 5%;
   transform: translate(-50%, -50%);
   width:60%;
+  height: 55%;
+  padding-right: 3%;
 }
 
 textarea {
   font-family: 'Cinzel', serif;
   font-size: 2vw;
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 90%;
+  height: 88%;
   border: none;
   outline: none;
   background-color: transparent;
@@ -69,6 +72,7 @@ textarea {
   white-space: pre-wrap;
   word-wrap: break-word;
   pointer-events: cursor;
+  border: 2px solid red;
 }
 
 .insult-form {
@@ -80,10 +84,12 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-top: 18px;
+  margin-left: 5px;
   position: absolute;
   left: 80%;
   top: 28%;
   transform: translateY(-50%);
+
 }
 
 .button {
