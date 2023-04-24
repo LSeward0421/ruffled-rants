@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ruffled-rants/static/css/main.bca75c2d.css",
+    "main.js": "/ruffled-rants/static/js/main.9e644522.js",
+    "static/media/BackgroundImage.svg": "/ruffled-rants/static/media/BackgroundImage.8f2a8df40cb038dfeca1.svg",
+    "static/media/historyCat.svg": "/ruffled-rants/static/media/historyCat.3b1b0f0c76af8119774475720ccdb18c.svg",
+    "static/media/LFTCat.svg": "/ruffled-rants/static/media/LFTCat.f70cc4a042d79dd3251e.svg",
+    "static/media/RTCat.svg": "/ruffled-rants/static/media/RTCat.940c9b2792ceb48ca208.svg",
+    "static/media/HistoryIcon.svg": "/ruffled-rants/static/media/HistoryIcon.fd7b0795b2793bd53249af520cc8da9a.svg",
+    "static/media/RuffledRantsLogo.svg": "/ruffled-rants/static/media/RuffledRantsLogo.31e33f14331a4bdb993be33f2d3f816f.svg",
+    "static/media/chatBubbleRight.svg": "/ruffled-rants/static/media/chatBubbleRight.6db850836288506306f2.svg",
+    "static/media/chatBubbleLft.svg": "/ruffled-rants/static/media/chatBubbleLft.11559ea33a6f20b1c40f.svg",
+    "index.html": "/ruffled-rants/index.html",
+    "main.bca75c2d.css.map": "/ruffled-rants/static/css/main.bca75c2d.css.map",
+    "main.9e644522.js.map": "/ruffled-rants/static/js/main.9e644522.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca75c2d.css",
+    "static/js/main.9e644522.js"
+  ]
+}
