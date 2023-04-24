@@ -59,7 +59,3 @@ Visit our deployed [Ruffled Rants](http://localhost:3000/ruffled-rants/)
   - [W3Schools](https://www.w3schools.com/)
   - [React Docs](https://reactjs.org/docs/getting-started.html)
   - [Cypress Docs](https://docs.cypress.io/guides/overview/why-cypress.html)
-
-
-## Project Specs
-  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
