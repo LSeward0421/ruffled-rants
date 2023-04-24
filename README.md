@@ -32,7 +32,7 @@ The user-friendly interface allows for easy text input and translation, and user
 
 ## Deployed Page
 
-Visit our deployed [Ruffled](add deploy)
+Visit our deployed [Ruffled Rants](http://localhost:3000/ruffled-rants/)
 
 ## Wins
 - Successfully integrated and utilized data from an unfamiliar API to enhance the app's functionality.
