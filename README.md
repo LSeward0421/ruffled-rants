@@ -1,4 +1,4 @@
-# ZingerZ
+# Ruffled Rants
 
 ## Table of Contents
   - [Introduction](#Introduction)
@@ -10,7 +10,6 @@
   - [Challenges & Improvements](#Challenges-&-Improvements)
   - [Set Up](#Set-Up)
   - [Sources](#Sources)
-  - [Project Spec](#Project-Spec)
 
 ## Introduction
 Welcome to Rambling Rants, the 🐱purrfect🐱 application for cat-loving thespians who desire to translate modern English into Shakespearean language. Users can type in any text and instantly receive a witty and "oh-so-dramatic" translation that is sure to impress their friends and colleagues.
@@ -43,6 +42,7 @@ Visit our deployed [Ruffled Rants](http://localhost:3000/ruffled-rants/)
 ## Challenges & Improvements
 - Working with a simple API and creating features that provide more context for the user. 
   - Possible future improvements and features:
+    - Responsiveness on all screen sizes without losing integrity of the design
     - Implement user authentication and login functionality, enabling personalized user experiences
     - Allow users to favorite translations
     - Build a backend using Express.js to better tailor the data and endpoints to the app's specific needs
