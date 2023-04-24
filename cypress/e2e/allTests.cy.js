@@ -49,17 +49,17 @@ describe("Home Page", () => {
     cy.get('.nav-link .history-icon').click();
     cy.url().should('include', '/history');
   });
-
-  it('should navigate to history page and display translation history', () => {
+  it('should navigate to history page, display translation history, and show history-cat image', () => {
     cy.get('textarea').type('You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die.');
     cy.get('.submit-btn').click();
     cy.get('.nav-link .history-icon').click();
     cy.url().should('include', '/history');
   
     cy.get('.insult').should('have.length', 1);
-    cy.get('.original-text').should('have.text', '"You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die."'); 
-    cy.get('.translated-text').should('have.text', '"Thee did giveth mr. Tim a hearty meal,  but unfortunately what he did doth englut did maketh him kicketh the bucket."'); 
-    cy.get('.date-created').should('be.visible'); 
+    cy.get('.original-text').should('have.text', '"You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die."');
+    cy.get('.translated-text').should('have.text', '"Thee did giveth mr. Tim a hearty meal,  but unfortunately what he did doth englut did maketh him kicketh the bucket."');
+    cy.get('.date-created').should('be.visible');
+    cy.get('.history-cat').should('be.visible');
   });
   
 

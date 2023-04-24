@@ -4,7 +4,7 @@ import './HomePage.css';
 import InsultHistoryContext from "../../InsultHistoryContext";
 
 const HomePage = () => {
-  const [translatedText, setTranslatedText] = useState('...Thy text translation.');
+  const [translatedText, setTranslatedText] = useState('');
   const { addInsult } = useContext(InsultHistoryContext);
 
   const handleTranslation = (original, translated) => {
