@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# ZingerZ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+  - [Introduction](#Introduction)
+  - [Technologies](#Technologies)
+  - [Contributors](#Contributors)
+  - [Illustrations](#Illustrations)
+  - [Deployed Page](#Deployed-Page)
+  - [Wins](#Wins)
+  - [Challenges & Improvements](#Challenges-&-Improvements)
+  - [Set Up](#Set-Up)
+  - [Sources](#Sources)
+  - [Project Spec](#Project-Spec)
 
-## Available Scripts
+## Introduction
+Welcome to Rambling Rants, the 🐱purrfect🐱 application for cat-loving thespians who desire to translate modern English into Shakespearean language. Users can type in any text and instantly receive a witty and "oh-so-dramatic" translation that is sure to impress their friends and colleagues.
 
-In the project directory, you can run:
+The user-friendly interface allows for easy text input and translation, and users can even access their previous translations on the history page. Whether you're looking to add a touch of "Olde" to your everyday conversations or simply enjoy the art of Shakespearean language, Rambling Rants has got you covered. Hope you enjoy! 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
+  - React
+  - Router
+  - Cypress
+  - Agile methodology
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributors
+  - [Lauren 'Larry' Seward](https://github.com/LSeward0421)
 
-### `npm test`
+## Illustrations 
+![App](https://media.giphy.com/media/wd9gSKObg7Nfgr4sSo/giphy.gif)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployed Page
 
-### `npm run build`
+Visit our deployed [Ruffled](add deploy)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wins
+- Successfully integrated and utilized data from an unfamiliar API to enhance the app's functionality.
+- Efficiently created and followed user stories, ensuring features catered to our target audience.
+- Fully tests user flows with ample error handling.
+- Maintained a steady pace throughout the project to deliver an mvp in a short timeframe
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges & Improvements
+- Working with a simple API and creating features that provide more context for the user. 
+  - Possible future improvements and features:
+    - Implement user authentication and login functionality, enabling personalized user experiences
+    - Allow users to favorite translations
+    - Build a backend using Express.js to better tailor the data and endpoints to the app's specific needs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Set Up
 
-### `npm run eject`
+1. Fork this repo  
+2. Clone the repo to your local machine   
+3. Run `npm i`, then ` npm run build`, then `npm start`
+4. View the project in the browser by opening localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [React Docs](https://reactjs.org/docs/getting-started.html)
+  - [Cypress Docs](https://docs.cypress.io/guides/overview/why-cypress.html)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
