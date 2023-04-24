@@ -45,10 +45,17 @@ describe("Home Page", () => {
     cy.get('.translated-text-container').should('contain.text', 'Thee did giveth mr. Tim a hearty meal,  but unfortunately what he did doth englut did maketh him kicketh the bucket.');
   });
 
+  it('should clear the text when clear button is clicked', () => {
+    cy.get('textarea').type('Some text to clear');
+    cy.get('.clear-btn').click();
+    cy.get('textarea').should('have.value', '');
+  });  
+
   it('should navigate to history page when history icon is clicked', () => {
     cy.get('.nav-link .history-icon').click();
     cy.url().should('include', '/history');
   });
+  
   it('should navigate to history page, display translation history, and show history-cat image', () => {
     cy.get('textarea').type('You gave Mr. Tim a hearty meal, but unfortunately what he ate made him die.');
     cy.get('.submit-btn').click();

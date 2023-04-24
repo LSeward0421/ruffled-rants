@@ -28,7 +28,7 @@
 @media only screen and (max-width: 1000px) {
   .translated-text-container {
     left: 32%;
-    top: 211%;
+    top: 204%;
     width: 33vw;
     height: 13vh;
   }
@@ -38,3 +38,39 @@
   }
 }
 
+/* iPhone SE */
+@media only screen and (min-width: 320px) { 
+  .translated-text-container {
+    height: 10vw;
+    top: 83%;
+  }
+  }
+
+
+/* iPhone XR */
+@media only screen and (min-width: 414px) { 
+  .translated-text-container {
+    top: 83%;
+  }
+}
+
+
+/* Samsung */
+@media only screen and (min-width: 360px) { 
+  .translated-text-container {
+    top: 79%;
+  }
+}
+
+/* iPad Air */
+@media only screen and (min-width: 820px) {
+  .translated-text-container {
+    top: 100%;
+  }
+}
+
+@media only screen and (min-width: 826px) {
+  .translated-text-container {
+    top: 83%;
+  }
+}
