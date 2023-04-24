@@ -7,8 +7,6 @@ import HistoryCat from './historyCat.svg'
 const History = () => {
   const { insultHistory } = useContext(InsultHistoryContext);
 
-
-  console.log(insultHistory)
   const historyResults = insultHistory.map((insult, index) => (
     <Insult
       key={index}
