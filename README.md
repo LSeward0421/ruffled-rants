@@ -12,7 +12,7 @@
   - [Sources](#Sources)
 
 ## Introduction
-Welcome to Rambling Rants, the 🐱purrfect🐱 application for cat-loving thespians who desire to translate modern English into Shakespearean language. Users can type in any text and instantly receive a witty and "oh-so-dramatic" translation that is sure to impress their friends and colleagues.
+Welcome to Ruffled Rants, the 🐱purrfect🐱 application for cat-loving thespians who desire to translate modern English into Shakespearean language. Users can type in any text and instantly receive a witty and "oh-so-dramatic" translation that is sure to impress their friends and colleagues.
 
 The user-friendly interface allows for easy text input and translation, and users can even access their previous translations on the history page. Whether you're looking to add a touch of "Olde" to your everyday conversations or simply enjoy the art of Shakespearean language, Rambling Rants has got you covered. Hope you enjoy! 
 
